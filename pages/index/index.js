@@ -4,7 +4,10 @@ var app = getApp()
 Page({
   data: {
     motto: 'Hello World',
-    userInfo: {}
+    userInfo: {},
+    staffA: {firstName: 'Hulk', lastName: 'Hua'},
+    staffB: {firstName: 'Shang', lastName: 'You'},
+    staffC: {firstName: 'Giden', lastName: 'Lin'}
   },
   //事件处理函数
   bindViewTap: function() {
