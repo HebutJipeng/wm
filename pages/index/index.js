@@ -1,6 +1,8 @@
 //index.js
 //获取应用实例
 var app = getApp()
+var common = require('../../common/a.js')
+
 Page({
   data: {
     motto: 'Hello World',
@@ -25,5 +27,23 @@ Page({
         userInfo:userInfo
       })
     })
+  },
+  onReady: function() {
+    console.log("页面渲染完成")
+  },
+  onShow: function() {
+    console.log("监听页面显示")
+  },
+  onHide: function() {
+    console.log("监听页面隐藏")
+  },
+  onUnload: function() {
+    console.log("监听页面卸载")
+  },
+  viewTap: function() {
+    console.log("首页的标语被点击了")
+  },
+  helloMina: function() {
+    common.sayHello("Mina")
   }
 })
