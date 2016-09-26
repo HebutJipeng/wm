@@ -4,11 +4,11 @@
     "pages/logs/logs"
   ],
   "window":{
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "约拍·微店",
+    "navigationBarTextStyle":"#cacaca",
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "pink",
-    "navigationBarTitleText": "WaterMelon",
-    "navigationBarTextStyle":"black",
-    "backgroundColor": "pink",
+    "backgroundColor": "#ffffff",
     "enablePullDownRefresh": true
   },
   "tabBar": {
