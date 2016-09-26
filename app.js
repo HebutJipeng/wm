@@ -25,6 +25,15 @@ App({
       })
     }
   },
+  onLaunch: function() {
+    console.log("---->小程序初始化完成")
+  },
+  onShow: function() {
+    console.log("---->小程序启动")
+  },
+  onHide: function(){
+    console.log("---->当小程序进入后台")
+  },
   globalData:{
     userInfo:null
   }

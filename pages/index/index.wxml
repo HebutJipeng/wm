@@ -1,5 +1,6 @@
 <!--index.wxml-->
 <view class="container">
+<<<<<<< HEAD
     <view class="banner">
         <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
             <block wx:for="{{imgUrls}}">
@@ -18,4 +19,21 @@
             </swiper-item> 
         </swiper>
     </view>
+=======
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto" bindtap="viewTap">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <template name="staffName">
+  	<view  bindtap="helloMina">
+  		FirstName: {{firstName}}, LastName: {{lastName}}
+  	</view>
+  </template>
+  <template is="staffName" data="{{...staffA}}"></template>
+  <template is="staffName" data="{{...staffB}}"></template>
+  <template is="staffName" data="{{...staffC}}"></template>
+>>>>>>> 12375e7969288406c4f01e87a189dde1483e7036
 </view>
